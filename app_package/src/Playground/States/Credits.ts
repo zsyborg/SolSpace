@@ -26,18 +26,16 @@ export class Credits extends State {
             GuiFramework.formatButtonGrid(grid);
             grid.addControl(panel, 0, 0);
             let panelGrid: Grid = GuiFramework.createTextPanel(grid);
-            GuiFramework.createPageTitle("Credits", panelGrid);
+            GuiFramework.createPageTitle("About Sol Space", panelGrid);
             grid.addControl(creditBlock, 0, 1);
     
             var textBlock = new TextBlock();
-            textBlock.text = "This demo was made by some members of the Babylon.js core team, @PatrickCRyan, @skaven_, and @DarraghBurke_, " + 
-            "to celebrate the release of Babylon.js 5.0.\n\n" + 
-            "The mission of our Babylon.js team is to create one of the most powerful, beautiful, " + 
-            "and simple web rendering engines in the world. Our passion is to make it completely open and free for everyone. As you may have guessed, " + 
-            "Babylon.js was named with a deep love and admiration of one of the greatest sci-fi shows of all time.\n\n" + 
-            "To get  the code of this demo on: https://github.com/BabylonJS/SpacePirates \n" + 
-            "To learn about Babylon.js: https://doc.babylonjs.com \n" + 
-            "To connect with the community: https://forum.babylonjs.com";
+            textBlock.text = "Sol Space is made with a vision to increase Solana's value by executing a chain reaction that improves the whole ecosystem.\n\n" + 
+            "The mission of our team is to create one of the most powerful, beautiful, " + 
+            "and simple web rendering games in the world. Our passion is to make it accessible for everyone.\n\n" + 
+             
+            "Telegram: https://t.me/solspace \n" + 
+            "Twitter: https://twitter.com/solspaced";
             textBlock.textWrapping = true;
             textBlock.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP;
             textBlock.textHorizontalAlignment = Control.HORIZONTAL_ALIGNMENT_LEFT;
@@ -65,7 +63,7 @@ export class Credits extends State {
             grid.addRowDefinition(0.6, false);
             grid.addRowDefinition(0.2, false);
             grid.addColumnDefinition(1.0, false);
-            let textBlock = new TextBlock("", "CREDITS");
+            let textBlock = new TextBlock("", "ABOUT");
             GuiFramework.setFont(textBlock, true, true);    
             textBlock.fontSize = 35;
             textBlock.color = "#a6fffa";

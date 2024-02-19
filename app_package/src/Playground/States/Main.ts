@@ -41,7 +41,7 @@ export class Main extends State {
             logo.fixedRatio = 340 / 1040;
             logo.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP
             logo.top = "100px";
-            grid.addControl(logo, 0, 1);
+            // grid.addControl(logo, 0, 1);
 
             Main.playButton = GuiFramework.addButton("Play", panel);
             Main.playButton.isVisible = Assets.loadingComplete;
@@ -81,7 +81,7 @@ export class Main extends State {
                 State.setCurrent(States.options);
             });
 
-            GuiFramework.addButton("Credits", panel).onPointerDownObservable.add(function(info) {
+            GuiFramework.addButton("About", panel).onPointerDownObservable.add(function(info) {
                 State.setCurrent(States.credits);
             });
             this._adt.addControl(grid);
@@ -95,7 +95,7 @@ export class Main extends State {
             logo.fixedRatio = 340 / 1040;
             logo.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP
             logo.top = "150px";
-            this._adt.addControl(logo);
+            // this._adt.addControl(logo);
 
             Main.playButton = GuiFramework.addButton("Play", panel);
             Main.playButton.isVisible = Assets.loadingComplete;

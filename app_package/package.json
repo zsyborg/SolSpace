@@ -6,7 +6,10 @@
   "types": "lib",
   "scripts": {
     "build": "tsc -p .",
-    "dev": "tsc --watch -p ."
+    "dev": "tsc --watch -p .",
+    "ndev": "next dev",
+    "nbuild": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",

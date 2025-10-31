@@ -36,12 +36,12 @@ export class Main extends State {
             GuiFramework.formatButtonGrid(grid);
             grid.addControl(panel, 0, 0);
 
-            let logo = new Image("spacePirates", "assets/UI/spacePiratesLogo.svg");
+            let logo = new Image("spacePirates", "assets/UI/solspace.png");
             logo.width = 0.7;
             logo.fixedRatio = 340 / 1040;
             logo.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP
             logo.top = "100px";
-            // grid.addControl(logo, 0, 1);
+            grid.addControl(logo, 0, 1);
 
             Main.playButton = GuiFramework.addButton("Play", panel);
             Main.playButton.isVisible = Assets.loadingComplete;

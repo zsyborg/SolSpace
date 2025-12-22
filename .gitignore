@@ -1,2 +1,5 @@
 node_modules/
-docspackage-lock.json
+docs
+package-lock.json
+.next/
+.DS_Store

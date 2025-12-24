@@ -1,10 +1,5 @@
 node_modules/
-<<<<<<< Updated upstream
-docs
+
 package-lock.json
 .next/
 .DS_Store
-=======
-docspackage-lock.json
-.next
->>>>>>> Stashed changes
